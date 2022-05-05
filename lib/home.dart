@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
             StatusSetion(),
             thindivider,
             HeaderButtonSection(),
-            thikdivider
+            thikdivider,
           ],
         ),
       ),
