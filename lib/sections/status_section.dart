@@ -1,4 +1,5 @@
 import 'package:facebook/widgets/assets.dart';
+import 'package:facebook/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class StatusSetion extends StatelessWidget {
@@ -7,14 +8,7 @@ class StatusSetion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(100),
-        child: Image.asset(
-          mark,
-          width: 50,
-          height: 50,
-        ),
-      ),
+      leading:Avatar(displayImage: mark) ,
       title: TextField(
         decoration: InputDecoration(
           hintText: "What's on your mind?",
