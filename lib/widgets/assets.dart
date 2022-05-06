@@ -11,4 +11,16 @@ String bro = "assets/avatar/brototype.jpg";
 String ffks = "assets/avatar/ffks.jpg";
 String sujith = "assets/avatar/sujith.jpg";
 
-
+String p1 = "assets/posts/p1.jpg";
+String p2 = "assets/posts/p2.jpg";
+String p3 = "assets/posts/p3.jpg";
+String p4 = "assets/posts/p4.jpg";
+String p5 = "assets/posts/p5.jpg";
+String p6 = "assets/posts/p6.jpg";
+String p7 = "assets/posts/p7.jpg";
+String p8 = "assets/posts/p8.jpg";
+String p9 = "assets/posts/p9.jpg";
+String p10 = "assets/posts/p10.jpg";
+String p11 = "assets/posts/p11.jpg";
+String p12 = "assets/posts/p12.jpg";
+String p13 = "assets/posts/p13.jpg";

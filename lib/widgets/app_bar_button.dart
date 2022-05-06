@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class AppBarButton extends StatelessWidget {
   final IconData icon;
   final void Function() buttonAction;
+  final Color iconColor;
 
-  AppBarButton({required this.icon, required this.buttonAction});
+  AppBarButton({
+    required this.icon,
+    required this.buttonAction,
+    this.iconColor = Colors.black,
+  });
 
   @override
   Widget build(BuildContext context) {

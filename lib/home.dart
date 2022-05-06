@@ -3,6 +3,7 @@ import 'package:facebook/sections/status_section.dart';
 import 'package:facebook/widgets/app_bar_button.dart';
 import 'package:facebook/widgets/dividers.dart';
 import 'package:facebook/widgets/room_section.dart';
+import 'package:facebook/widgets/story_section.dart';
 
 import 'package:flutter/material.dart';
 
@@ -41,6 +42,8 @@ class Home extends StatelessWidget {
             HeaderButtonSection(),
             thikdivider,
             RoomSection(),
+            thikdivider,
+            StorySection(),
             thikdivider
           ],
         ),
