@@ -8,18 +8,17 @@ class StatusSetion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading:Avatar(displayImage: mark) ,
+      leading: Avatar(displayImage: mark, statusIndicator: false),
       title: TextField(
         decoration: InputDecoration(
-          hintText: "What's on your mind?",
-          hintStyle: TextStyle(
-            color: Colors.black,
-          ),
-          enabledBorder: InputBorder.none,
-          focusedBorder: InputBorder.none,
-          errorBorder: InputBorder.none,
-          disabledBorder: InputBorder.none
-        ),
+            hintText: "What's on your mind?",
+            hintStyle: TextStyle(
+              color: Colors.black,
+            ),
+            enabledBorder: InputBorder.none,
+            focusedBorder: InputBorder.none,
+            errorBorder: InputBorder.none,
+            disabledBorder: InputBorder.none),
       ),
     );
   }
