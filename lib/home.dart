@@ -40,7 +40,8 @@ class Home extends StatelessWidget {
             thindivider,
             HeaderButtonSection(),
             thikdivider,
-            RoomSection()
+            RoomSection(),
+            thikdivider
           ],
         ),
       ),

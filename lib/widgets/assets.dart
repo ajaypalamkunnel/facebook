@@ -1,4 +1,4 @@
-String dq = "assets/avatar/q.jpg";
+String dq = "assets/avatar/dq.jpg";
 String mark = "assets/avatar/mark.jpg";
 String elone = "assets/avatar/elone.jpg";
 String lulu = "assets/avatar/lulu.jpg";
