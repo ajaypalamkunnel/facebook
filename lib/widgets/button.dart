@@ -5,6 +5,7 @@ Widget headerButtons({
   required IconData buttonIcon,
   required Function() buttonAction,
   required Color buttonColor,
+  required Color textcolor 
 }) {
   return TextButton.icon(
       onPressed: () {
@@ -14,5 +15,5 @@ Widget headerButtons({
         buttonIcon,
         color: buttonColor,
       ),
-      label: Text(buttonText));
+      label: Text(buttonText,style: TextStyle(color: textcolor),));
 }

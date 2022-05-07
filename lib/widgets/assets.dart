@@ -10,6 +10,7 @@ String santhosh = "assets/avatar/santhosh.jpg";
 String bro = "assets/avatar/brototype.jpg";
 String ffks = "assets/avatar/ffks.jpg";
 String sujith = "assets/avatar/sujith.jpg";
+String jb = "assets/avatar/jb.jpg";
 
 String p1 = "assets/posts/p1.jpg";
 String p2 = "assets/posts/p2.jpg";
@@ -26,8 +27,16 @@ String p12 = "assets/posts/p12.jpg";
 String p13 = "assets/posts/p13.jpg";
 String p14 = "assets/posts/p14.jpg";
 
-
 //captions
 
 String sitaRaman =
     '''#SitaRamam is set to steal your hearts ♥️ First Single #OhSitaHeyRama #HeySitaHeyRama #PenPooveThenvande out on May 9th.''';
+
+String kgf =
+    'The ones who change their destiny, change the world! Sulthana Out Now!';
+
+String jfb =
+    'US Senator Bernie Sanders lashed out at Elon Musk and Jeff Bezos over their space ambitions on Friday';
+
+String sinamika =
+    'Hey Sinamika on Netflix and Jio cinemas from tomorrow 💕💕💕💕';

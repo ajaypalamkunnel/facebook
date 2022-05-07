@@ -1,6 +1,7 @@
 import 'package:facebook/sections/header_section.dart';
 import 'package:facebook/widgets/app_bar_button.dart';
 import 'package:facebook/widgets/avatar.dart';
+import 'package:facebook/widgets/button.dart';
 import 'package:facebook/widgets/dividers.dart';
 import 'package:facebook/widgets/verified.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,35 @@ class PostCard extends StatelessWidget {
           postcardHeader(),
           captionSection(caption),
           imageSection(postImage),
-          reactionSection(lcount: lcount, ccount: ccount, scount: scount)
+          reactionSection(lcount: lcount, ccount: ccount, scount: scount),
+          HeaderButtonSection(
+            buttonOne: headerButtons(
+                buttonText: 'Like',
+                buttonIcon: Icons.thumb_up,
+                buttonAction: () {
+                  print("like");
+                },
+                buttonColor: Colors.grey.shade700,
+                textcolor: Colors.grey.shade700),
+            buttonTwo: headerButtons(
+              buttonText: 'Comments',
+              buttonIcon: Icons.comment,
+              buttonAction: () {
+                print("comment");
+              },
+              buttonColor: Colors.grey.shade700,
+              textcolor: Colors.grey.shade700,
+            ),
+            buttonThree: headerButtons(
+                buttonText: 'Share',
+                buttonIcon: Icons.share,
+                buttonAction: () {
+                  print("share");
+                },
+                buttonColor: Colors.grey.shade700,
+                textcolor: Colors.grey.shade700),
+          ),
+          thikdivider
         ],
       ),
     );
@@ -105,6 +134,7 @@ class PostCard extends StatelessWidget {
               size: 25,
             ),
             thindivider,
+
             //HeaderButtonSection()
           ],
         ))
@@ -124,6 +154,7 @@ class PostCard extends StatelessWidget {
 
   Widget captionSection(caption) {
     return Container(
+      padding: EdgeInsets.only(left: 5, right: 5, bottom: 5),
       child: Text(
         caption,
         style: TextStyle(
