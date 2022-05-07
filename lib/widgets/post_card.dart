@@ -38,6 +38,7 @@ class PostCard extends StatelessWidget {
           captionSection(caption),
           imageSection(postImage),
           reactionSection(lcount: lcount, ccount: ccount, scount: scount),
+          thindivider,
           HeaderButtonSection(
             buttonOne: headerButtons(
                 buttonText: 'Like',

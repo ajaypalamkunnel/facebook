@@ -7,6 +7,7 @@ import 'package:facebook/widgets/dividers.dart';
 import 'package:facebook/widgets/post_card.dart';
 import 'package:facebook/widgets/room_section.dart';
 import 'package:facebook/widgets/story_section.dart';
+import 'package:facebook/widgets/suggestiion_section.dart';
 
 import 'package:flutter/material.dart';
 
@@ -108,6 +109,8 @@ class Home extends StatelessWidget {
               ccount: '70k',
               scount: '22k ',
             ),
+            SuggestionSection(),
+            thikdivider,
             PostCard(
               avatar: jb,
               userName: "Jeff Bezos ",
