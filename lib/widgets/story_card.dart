@@ -8,12 +8,15 @@ class StoryCard extends StatelessWidget {
   final String image;
   final bool button;
   final String avatar;
+  final bool withstatusbar;
+  
 
   StoryCard(
       {required this.name,
       required this.image,
       this.button = false,
-      required this.avatar}) {}
+      required this.avatar,
+      this.withstatusbar=false}) {}
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +46,7 @@ class StoryCard extends StatelessWidget {
                     buttonAction: () {
                       print("Add story button clicked");
                     })
-                : Avatar(displayImage: avatar),
+                : Avatar(displayImage: avatar,statusBar: withstatusbar,),
           ),
           Positioned(
               bottom: 10,
