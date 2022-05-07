@@ -4,11 +4,16 @@ class Avatar extends StatelessWidget {
   final String displayImage;
   final bool statusIndicator;
   final bool statusBar;
+  final double width;
+  final double height;
 
-  Avatar(
-      {required this.displayImage,
-      this.statusIndicator = false,
-      this.statusBar = false}) {}
+  Avatar({
+    required this.displayImage,
+    this.statusIndicator = false,
+    this.statusBar = false,
+    this.width = 50,
+    this.height = 50,
+  }) {}
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +34,8 @@ class Avatar extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
             child: Image.asset(
               displayImage,
-              width: 50,
-              height: 50,
+              width: width,
+              height: height,
             ),
           ),
         ),

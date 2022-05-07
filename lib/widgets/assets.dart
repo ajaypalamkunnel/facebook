@@ -24,3 +24,10 @@ String p10 = "assets/posts/p10.jpg";
 String p11 = "assets/posts/p11.jpg";
 String p12 = "assets/posts/p12.jpg";
 String p13 = "assets/posts/p13.jpg";
+String p14 = "assets/posts/p14.jpg";
+
+
+//captions
+
+String sitaRaman =
+    '''#SitaRamam is set to steal your hearts ♥️ First Single #OhSitaHeyRama #HeySitaHeyRama #PenPooveThenvande out on May 9th.''';
