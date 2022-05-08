@@ -1,3 +1,4 @@
+import 'package:facebook/widgets/assets.dart';
 import 'package:facebook/widgets/suggestion_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,12 +9,11 @@ class SuggestionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 450,
       child: Column(children: [
         ListTile(
           title: Text(
             "People You May Know",
-           
           ),
           trailing: IconButton(
               onPressed: () {
@@ -25,10 +25,16 @@ class SuggestionSection extends StatelessWidget {
               )),
         ),
         Container(
-          height: 340,
+          height: 390,
           child: ListView(
             scrollDirection: Axis.horizontal,
-            children: [SuggestionCard()],
+            children: [
+              SuggestionCard(
+                image: ajay,
+                mutual: '5 Mutual',
+                name: 'Ajay',
+              )
+            ],
           ),
         )
       ]),
