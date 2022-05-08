@@ -10,7 +10,7 @@ class SuggestionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 450,
+      height: 445,
       child: Column(children: [
         ListTile(
           title: Text(
@@ -29,9 +29,7 @@ class SuggestionSection extends StatelessWidget {
           height: 390,
           child: ListView(
             scrollDirection: Axis.horizontal,
-            children: [
-              SuggestionCard()
-            ],
+            children: [SuggestionCard()],
           ),
         )
       ]),

@@ -7,7 +7,7 @@ class SuggestionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: 320,
       margin: EdgeInsets.only(
         left: 10,
         right: 10,
@@ -27,13 +27,21 @@ class SuggestionCard extends StatelessWidget {
         right: 0,
         left: 0,
         child: Container(
+          decoration: BoxDecoration(
+              color: Colors.grey.shade200,
+              border: Border.all(color: Colors.grey.shade300, width: 1),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10))),
           height: 140,
-          color: Colors.grey[200],
           child: Column(
             children: [
               ListTile(
                 title: Text("Ajay ps"),
                 subtitle: Text("4 Mutual Friends"),
+              ),
+              SizedBox(
+                height: 5,
               ),
               Container(
                 padding: EdgeInsets.only(
@@ -83,6 +91,7 @@ class SuggestionCard extends StatelessWidget {
   Widget removebutton() {
     return TextButton(
         style: TextButton.styleFrom(
+          minimumSize: Size(60, 40),
           backgroundColor: Colors.grey[300],
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
@@ -92,7 +101,7 @@ class SuggestionCard extends StatelessWidget {
         ),
         onPressed: () {},
         child: const Text(
-          "Remove",
+          "  Remove  ",
           style: TextStyle(color: Colors.black),
         ));
   }
