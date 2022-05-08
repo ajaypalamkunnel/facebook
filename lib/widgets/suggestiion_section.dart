@@ -1,5 +1,6 @@
 import 'package:facebook/widgets/assets.dart';
 import 'package:facebook/widgets/suggestion_card.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,11 +30,7 @@ class SuggestionSection extends StatelessWidget {
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              SuggestionCard(
-                image: ajay,
-                mutual: '5 Mutual',
-                name: 'Ajay',
-              )
+              SuggestionCard()
             ],
           ),
         )

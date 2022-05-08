@@ -1,50 +1,39 @@
-import 'dart:html';
-
 import 'package:facebook/widgets/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SuggestionCard extends StatelessWidget {
-  final String name;
-  final String mutual;
-  final String image;
-
-  SuggestionCard(
-      {required this.name, required this.mutual, required this.image});
+  const SuggestionCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 340,
+      width: 300,
       margin: EdgeInsets.only(
         left: 10,
         right: 10,
       ),
-      child: Stack(
-        children: [
-          suggestionDetails(
-            name: name,
-            mutual: mutual,
-          ),
-          suggestionImage(image),
-        ],
-      ),
+      child: Stack(children: [
+        suggestionImage(),
+        suggestiondetails(),
+      ]),
     );
   }
 
-  Widget suggestionDetails({required name, required mutual}) {
+//details
+
+  Widget suggestiondetails() {
     return Positioned(
         bottom: 0,
-        left: 0,
         right: 0,
+        left: 0,
         child: Container(
-          height: 130,
+          height: 140,
           color: Colors.grey[200],
           child: Column(
             children: [
               ListTile(
-                title: Text(name),
-                subtitle: Text(mutual),
+                title: Text("Ajay ps"),
+                subtitle: Text("4 Mutual Friends"),
               ),
               Container(
                 padding: EdgeInsets.only(
@@ -55,14 +44,8 @@ class SuggestionCard extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    suggestionBotton(
-                        buttonAction: () {
-                          print("Add friend");
-                        },
-                        buttonIcon: Icons.account_box,
-                        buttonColor: Colors.white,
-                        buttonText: "Add Friend"),
-                    suggestionButtonRemove()
+                    addfriendbutton(),
+                    removebutton(),
                   ],
                 ),
               )
@@ -71,44 +54,52 @@ class SuggestionCard extends StatelessWidget {
         ));
   }
 
-  Widget suggestionButtonRemove() {
+//add friend button
+
+  Widget addfriendbutton() {
+    return TextButton.icon(
+        style: TextButton.styleFrom(
+          backgroundColor: Colors.blue[700],
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(5),
+            ),
+          ),
+        ),
+        onPressed: () {
+          print("Add friend");
+        },
+        icon: Icon(
+          Icons.account_box,
+          color: Colors.white,
+        ),
+        label: Text(
+          "Add Friend",
+          style: TextStyle(color: Colors.white),
+        ));
+  }
+
+//remove button
+  Widget removebutton() {
     return TextButton(
         style: TextButton.styleFrom(
-            backgroundColor: Colors.grey[300],
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(5)))),
-        onPressed: () {
-          print("remove pressed");
-        },
-        child: Text(
+          backgroundColor: Colors.grey[300],
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(5),
+            ),
+          ),
+        ),
+        onPressed: () {},
+        child: const Text(
           "Remove",
           style: TextStyle(color: Colors.black),
         ));
   }
 
-  Widget suggestionBotton({
-    required Function() buttonAction,
-    required IconData buttonIcon,
-    required Color buttonColor,
-    required String buttonText,
-  }) {
-    return TextButton.icon(
-        style: TextButton.styleFrom(
-            backgroundColor: Colors.blue[700],
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(5)))),
-        onPressed: buttonAction,
-        icon: Icon(
-          buttonIcon,
-          color: Colors.white,
-        ),
-        label: Text(
-          buttonText,
-          style: TextStyle(color: Colors.white),
-        ));
-  }
+//image
 
-  Widget suggestionImage(img) {
+  Widget suggestionImage() {
     return Positioned(
         top: 0,
         left: 0,
@@ -119,9 +110,9 @@ class SuggestionCard extends StatelessWidget {
             topRight: Radius.circular(10),
           ),
           child: Image.asset(
-            img,
+            ajay,
+            height: 250,
             alignment: Alignment.topCenter,
-            height: 200,
             fit: BoxFit.cover,
           ),
         ));
