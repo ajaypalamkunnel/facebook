@@ -29,7 +29,33 @@ class SuggestionSection extends StatelessWidget {
           height: 390,
           child: ListView(
             scrollDirection: Axis.horizontal,
-            children: [SuggestionCard()],
+            children: [
+              SuggestionCard(
+                name: 'Ajay ps',
+                mutual: '5 Mutual Friends',
+                image: ajay,
+              ),
+              // SuggestionCard(
+              //   name: 'Tovino Thomas',
+              //   mutual: '15 Mutual Friends',
+              //   image: t,
+              // ),
+              // SuggestionCard(
+              //   name: 'Ajay ps',
+              //   mutual: '5 Mutual Friends',
+              //   image: ajay,
+              // ),
+              // SuggestionCard(
+              //   name: 'Ajay ps',
+              //   mutual: '5 Mutual Friends',
+              //   image: ajay,
+              // ),
+              // SuggestionCard(
+              //   name: 'Ajay ps',
+              //   mutual: '5 Mutual Friends',
+              //   image: ajay,
+              // ),
+            ],
           ),
         )
       ]),

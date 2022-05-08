@@ -2,7 +2,12 @@ import 'package:facebook/widgets/assets.dart';
 import 'package:flutter/material.dart';
 
 class SuggestionCard extends StatelessWidget {
-  const SuggestionCard({Key? key}) : super(key: key);
+  final String name;
+  final String mutual;
+  final String image;
+
+  SuggestionCard(
+      {required this.name, required this.mutual, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +18,15 @@ class SuggestionCard extends StatelessWidget {
         right: 10,
       ),
       child: Stack(children: [
-        suggestionImage(),
-        suggestiondetails(),
+        suggestionImage(image: image),
+        suggestiondetails(name: name, mutual: mutual),
       ]),
     );
   }
 
 //details
 
-  Widget suggestiondetails() {
+  Widget suggestiondetails({required name, required mutual}) {
     return Positioned(
         bottom: 0,
         right: 0,
@@ -37,8 +42,8 @@ class SuggestionCard extends StatelessWidget {
           child: Column(
             children: [
               ListTile(
-                title: Text("Ajay ps"),
-                subtitle: Text("4 Mutual Friends"),
+                title: Text(name),
+                subtitle: Text(mutual),
               ),
               SizedBox(
                 height: 5,
@@ -108,7 +113,7 @@ class SuggestionCard extends StatelessWidget {
 
 //image
 
-  Widget suggestionImage() {
+  Widget suggestionImage({required image}) {
     return Positioned(
         top: 0,
         left: 0,
@@ -119,7 +124,7 @@ class SuggestionCard extends StatelessWidget {
             topRight: Radius.circular(10),
           ),
           child: Image.asset(
-            ajay,
+            image,
             height: 250,
             alignment: Alignment.topCenter,
             fit: BoxFit.cover,
