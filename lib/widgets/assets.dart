@@ -12,6 +12,8 @@ String ffks = "assets/avatar/ffks.jpg";
 String sujith = "assets/avatar/sujith.jpg";
 String jb = "assets/avatar/jb.jpg";
 String ajay = "assets/avatar/ajay.jpg";
+String tovino = "assets/avatar/tovino.jpg";
+String mohanlal = "assets/avatar/mohanlal.jpg";
 
 String p1 = "assets/posts/p1.jpg";
 String p2 = "assets/posts/p2.jpg";

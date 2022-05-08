@@ -35,26 +35,25 @@ class SuggestionSection extends StatelessWidget {
                 mutual: '5 Mutual Friends',
                 image: ajay,
               ),
-              // SuggestionCard(
-              //   name: 'Tovino Thomas',
-              //   mutual: '15 Mutual Friends',
-              //   image: t,
-              // ),
-              // SuggestionCard(
-              //   name: 'Ajay ps',
-              //   mutual: '5 Mutual Friends',
-              //   image: ajay,
-              // ),
-              // SuggestionCard(
-              //   name: 'Ajay ps',
-              //   mutual: '5 Mutual Friends',
-              //   image: ajay,
-              // ),
-              // SuggestionCard(
-              //   name: 'Ajay ps',
-              //   mutual: '5 Mutual Friends',
-              //   image: ajay,
-              // ),
+              SuggestionCard(
+                name: 'Tovino Thomas',
+                mutual: '15 Mutual Friends',
+                image: tovino,
+              ),
+              SuggestionCard(
+                name: 'Sujith Bhakthan',
+                mutual: '6 Mutual Friends',
+                image: sujith,
+              ),
+              SuggestionCard(
+                  name: 'Fishing Freaks',
+                  mutual: '8 Mutual Friends',
+                  image: ffks),
+              SuggestionCard(
+                name: 'Mohanlal',
+                mutual: '4 Mutual Friends',
+                image: mohanlal,
+              ),
             ],
           ),
         )
